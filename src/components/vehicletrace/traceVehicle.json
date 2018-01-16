@@ -1,0 +1,55 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "deviceId": 1805,
+            "traceId": 7728,
+            "vehicleId": 21757,
+            "vehicleNum": "鲁UD7373"
+        },
+        {
+            "deviceId": 3405,
+            "traceId": 7705,
+            "vehicleId": 23381,
+            "vehicleNum": "17265886"
+        },
+        {
+            "deviceId": 3407,
+            "traceId": 7707,
+            "vehicleId": 23383,
+            "vehicleNum": "17265868"
+        },
+        {
+            "deviceId": 3244,
+            "traceId": 7706,
+            "vehicleId": 23220,
+            "vehicleNum": "17260758"
+        },
+        {
+            "deviceId": 3232,
+            "traceId": 7704,
+            "vehicleId": 23208,
+            "vehicleNum": "17262918"
+        },
+        {
+            "deviceId": 2891,
+            "traceId": 7703,
+            "vehicleId": 22856,
+            "vehicleNum": "京NUS777"
+        },
+        {
+            "deviceId": 1791,
+            "traceId": 7702,
+            "vehicleId": 21742,
+            "vehicleNum": "鲁B98FM6"
+        },
+        {
+            "deviceId": 1806,
+            "traceId": 7626,
+            "vehicleId": 21758,
+            "vehicleNum": "鲁UE1316"
+        }
+    ],
+    "message": "",
+    "success": true
+}
