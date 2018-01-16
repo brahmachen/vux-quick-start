@@ -1,1 +1,0 @@
-webpackJsonp([4],[function(e,n,t){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}var u=t(39),a=o(u);a.default.component("my-component",{template:"<h1>功能列表</h1>"}),new a.default({el:"#example",components:{}})}]);
