@@ -17,7 +17,7 @@
 				<x-textarea title="备注" class="sub-item" :show-counter="false" :rows="5" :value="user.memo" readonly></x-textarea>
 			</group> -->
 			<group label-width="4.5em" label-margin-right="2em" label-align="left">
-				<selector title="缴费类型"  v-model="price.paymentMode" placeholder="请选择" :options="listPayMode"></selector>
+				<selector title="缴费类型" class="select-margin"  v-model="price.paymentMode" placeholder="请选择" :options="listPayMode"></selector>
 			</group>
 		</div>
     	<toast v-model="showWarning" type="warn">{{message}}</toast>
@@ -78,4 +78,7 @@
 		overflow: scroll;
 		background: #ECECEC;
 	}
+	.select-margin .weui-cell__hd {
+        margin-left: 29px !important;
+    }
 </style>
