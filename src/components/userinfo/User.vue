@@ -2,7 +2,7 @@
 	<div>
 		<x-header>账户信息</x-header>
 		<div class="container">
-			<group label-width="4.5em" label-margin-right="2em" label-align="left">
+			<!-- <group label-width="4.5em" label-margin-right="2em" label-align="left">
 				<cell title="操作员" :value="user.name" value-align="left"></cell>
 				<cell title="所属机构" :value="user.customerName" value-align="left"></cell>
 				<cell title="状态" :value="user.isEnableName" value-align="left"></cell>
@@ -15,6 +15,9 @@
 				<cell title="电话" :value="user.mobile" value-align="left"></cell>
 				<cell title="邮箱" :value="user.account" value-align="left"></cell>
 				<x-textarea title="备注" class="sub-item" :show-counter="false" :rows="5" :value="user.memo" readonly></x-textarea>
+			</group> -->
+			<group label-width="4.5em" label-margin-right="2em" label-align="left">
+				<selector title="缴费类型"  v-model="price.paymentMode" placeholder="请选择" :options="listPayMode"></selector>
 			</group>
 		</div>
     	<toast v-model="showWarning" type="warn">{{message}}</toast>
@@ -22,7 +25,7 @@
 </template>
 
 <script>
-	import { Cell, CellBox, Group, XTextarea, Toast, XHeader } from 'vux'
+	import { Cell, CellBox, Group, XTextarea, Toast, XHeader, Selector } from 'vux'
 	import user from "./user.json"
 	export default {
 		mounted() {
@@ -33,13 +36,29 @@
 			CellBox,
 			XTextarea,
 			Toast,
-			XHeader
+			XHeader,
+			Selector
 		},
 		data() {
 			return {
 				showWarning:false,
 				message:'',
-				user: {}
+				user: {},
+				price: {
+					paymentMode: ""
+				},
+				listPayMode: [
+					{
+						key: "102",
+						value: "自缴"
+					}, {
+						key: "101",
+						value: "代缴"
+					}, {
+						key: "103",
+						value: "其他"
+					}
+				],
 			}
 		},
 		beforeMount(){
